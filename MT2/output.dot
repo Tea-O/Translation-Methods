@@ -1,0 +1,27 @@
+digraph G {
+  "0_E" [label="E"]
+  "1_FT" [label="FT"]
+  "2_TYPE: int" [label="TYPE: int"]
+  "1_FT" -> "2_TYPE: int"
+  "0_E" -> "1_FT"
+  "1_SUB" [label="SUB"]
+  "2_POINTER: *" [label="POINTER: *"]
+  "1_SUB" -> "2_POINTER: *"
+  "2_EPS" [label="EPS"]
+  "1_SUB" -> "2_EPS"
+  "0_E" -> "1_SUB"
+  "1_N" [label="N"]
+  "2_IDENTIFIER: name" [label="IDENTIFIER: name"]
+  "1_N" -> "2_IDENTIFIER: name"
+  "0_E" -> "1_N"
+  "1_LBRACKET: (" [label="LBRACKET: ("]
+  "0_E" -> "1_LBRACKET: ("
+  "1_AS" [label="AS"]
+  "2_EPS" [label="EPS"]
+  "1_AS" -> "2_EPS"
+  "0_E" -> "1_AS"
+  "1_RBRACKET: )" [label="RBRACKET: )"]
+  "0_E" -> "1_RBRACKET: )"
+  "1_SEMICOLON: ;" [label="SEMICOLON: ;"]
+  "0_E" -> "1_SEMICOLON: ;"
+}
